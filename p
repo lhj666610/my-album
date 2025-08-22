@@ -1,50 +1,29 @@
-
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>相册</title>
+  <title>照片</title>
   <style>
-    body {
+    * {
       margin: 0;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
       overflow: hidden;
     }
-    .slider {
-      display: flex;
+    body {
+      background: #000;
+    }
+    img {
       width: 100%;
       height: 100%;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-    }
-    .slider::-webkit-scrollbar { display: none; }
-    .slide {
-      flex: none;
-      width: 100%;
-      height: 100%;
-      scroll-snap-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .slide img {
-      max-width: 100vw;
-      max-height: 100vh;
-      object-fit: contain;
+      object-fit: cover; /* 自动裁剪填满，不留黑边 */
     }
   </style>
 </head>
 <body>
-  <div class="slider">
-    <div class="slide"><img src="屏幕截图 2025-06-26 222811.png" alt="photo1"></div>
-    <div class="slide"><img src="photo2.jpg" alt="photo2"></div>
-    <div class="slide"><img src="photo3.jpg" alt="photo3"></div>
-  </div>
+  <img src="" alt="照片">
 </body>
 </html>
