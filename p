@@ -24,6 +24,6 @@
   </style>
 </head>
 <body>
-  <img src="" alt="照片">
+  <img src="屏幕截图 2025-06-26 222811.png" alt="照片">
 </body>
 </html>
